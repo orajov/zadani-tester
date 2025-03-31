@@ -36,6 +36,6 @@
 - V úkolu jsem se zaměřil spíše na demostraci ovládání testování skrze env pro praktické ovládání v CI a dodržování DRY principu.
 - Pomocí parametrizace jobů pak můžeme pokrýt další prohlížeče a různá rozlišení.
 - Dále bychom mohli pokračovat v psaní dalších testů pro vytváření, editaci, mazání faktur a vydajů či sortování a vyhledávání záznamů nebo zobrazování sloupů v tabulce.
-- Další možné zlepšení možné přejít na typescript a případně nainstalovat tslint.
+- Další možné zlepšení může být přejití na typescript a případně nainstalovat tslint.
 - Můžeme logovat a ukládat do artefaktů další věci jako třeba chyby aplikace, sledovat traffic pomocí interceptů atd.
 - Veškére tyto body můžu ještě rozvést na callu.

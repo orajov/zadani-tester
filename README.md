@@ -30,11 +30,12 @@
 - Způsob používání selektorů je řešení pro **testování jazykových mutací**, pokud se testy napojí na vývojářské locales (zde jsem vytvořil vlastní locales pro ukázku).
 - Report testování se mimo konzoli vygeneruje ve složce **e2e/report**.
 - Použití selektorů je praktické také na ovládání tabulek test-driven způsobem pomocí **iterací**.
+- Pomocí parametru mobileResolution v Cypress.config() můžeme pomocí podmínek zapínat kód pro ovládání aplikace v **mobilním rozlišení**, pokud se někdy design liší.
 
 ### Prostor pro zlepšení
 - V úkolu jsem se zaměřil spíše na demostraci ovládání testování skrze env pro praktické ovládání v CI a dodržování DRY principu.
 - Pomocí parametrizace jobů pak můžeme pokrýt další prohlížeče a různá rozlišení.
-- Dále bychom mohli pokračovat v psaní dalších testů pro vytváření, editacim mazání faktur a vydajů či sortování, vyhledávání záznamů či zobrazování sloupů v tabulce.
+- Dále bychom mohli pokračovat v psaní dalších testů pro vytváření, editaci, mazání faktur a vydajů či sortování a vyhledávání záznamů nebo zobrazování sloupů v tabulce.
 - Další možné zlepšení možné přejít na typescript a případně nainstalovat tslint.
 - Můžeme logovat a ukládat do artefaktů další věci jako třeba chyby aplikace, sledovat traffic pomocí interceptů atd.
 - Veškére tyto body můžu ještě rozvést na callu.

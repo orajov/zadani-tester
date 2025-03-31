@@ -1,0 +1,30 @@
+[
+  {
+    "testName": "01_new_contact",
+    "name": "ČESKÁ NÁRODNÍ BANKA",
+    "ico": "48136450",
+    "dic": "CZ48136450",
+    "email": "pojistovny@cnb.cz",
+    "website": "https://www.cnb.cz",
+    "address": {
+      "street": "Na příkopě 864/28, Nové Město",
+      "city": "Praha",
+      "zip": "11000",
+      "country": "Česká republika"
+    }
+  },
+  {
+    "testName": "02_edit_contact",
+    "name": "Česká pošta, s.p.",
+    "ico": "47114983",
+    "dic": "CZ47114983",
+    "email": "postshop@cpost.cz",
+    "website": "https://www.ceskaposta.cz",
+    "address": {
+      "street": "Politických vězňů 909/4",
+      "city": "Praha 1",
+      "zip": "22599",
+      "country": "Česká republika"
+    }
+  }
+]

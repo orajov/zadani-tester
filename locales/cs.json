@@ -1,0 +1,43 @@
+{
+    "auth": {
+        "login": "Přihlásit se",
+        "signUpTry": "Vyzkoušet",
+        "signInExist": "Přihlásit se do mého účtu",
+        "signIn": "Přihlásit se",
+        "email": "Váš e-mail",
+        "password": "Heslo"
+    },
+    "menu": {
+        "mobile": "Menu",
+        "login": "Přihlásit se",
+        "overview": "Přehled",
+        "invoices": "Faktury",
+        "contacts": "Kontakty",
+        "reports": "Reporty",
+        "expenses": "Výdaje",
+        "myAccount": "Můj účet",
+        "close": "Zavřít"
+    },
+    "contacts": {
+        "button": {
+            "save": "Uložit změny",
+            "back": "Zahodit",
+            "new": "Nový kontakt",
+            "add": "Přidat kontakt",
+            "edit": "Upravit kontakt",
+            "delete": "Ano smazat"
+        },
+        "name": "Jméno",
+        "ico": "IČO",
+        "dic": "DIČ",
+        "phone": "Telefon",
+        "email": "E-mail",
+        "website": "Web",
+        "address": {
+            "street": "Ulice",
+            "city": "Město",
+            "zip": "PSČ",
+            "country": "Země"
+        }
+    }
+}

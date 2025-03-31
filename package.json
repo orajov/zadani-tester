@@ -1,4 +1,9 @@
 {
+  "name": "faktury-online-zadani",
+  "description": "Demonstration of e2e testing using Cypress framework",
+  "scripts": {
+    "test:e2e": "cypress run"
+  },
   "devDependencies": {
     "cypress": "^12.8.1"
   }

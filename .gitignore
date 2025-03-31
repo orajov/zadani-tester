@@ -1,5 +1,3 @@
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
-cypress/downloads/
+node_modules
+e2e/downloads
+e2e/report

@@ -1,50 +1,40 @@
-# Tester(ka)
+# FAKTURY ONLINE - domácí úkol
 
-## Intro
-Tvým úkolem je připravit E2E testy pro sekci kontakty na těchto doménách:
+## Spuštění
 
-  * dev.fakturaonline.cz
-  * dev.invoiceonline.com
-  * dev.fakturaonline.sk
+### 1. Klonování repozitáře
+   ```bash
+   git clone https://github.com/orajov/zadani-tester.git
+   ```
 
-## Zadání
-- Forkni si tento projekt a začni pracovat. Jako výsledek tvé práce pošli odkaz na repozitář, kam pushneš svůj kód.
-- Připrav testy pro sekci kontakty, která je dostupná po přihlášení/registraci (nejedná se o stránku kontaktujte nás ;), které pokryjí jejich funkcionalitu. Prozkoumej, co všechno tato sekce aplikace umí, a napiš testy.
-- Jelikož naše aplikace funguje na více doménách, potřebujeme testovat cross-domain, promysli, jaká struktura testu je nejvhodnější. (Někdy je funkcionalita stejná, někdy je různá)
+### 2. Instalace závislostí
+   ```bash
+   npm install
+   ```
+### 3. Nastavení ENV
 
-## Proč zadání vypadá jak vypadá?
-Potřebujeme si ověřit, že:
+**CYPRESS_URL**=`https://dev.fakturaonline.cz`
 
-- zvládneš otestovat naší aplikaci
-- dokážeš psát čistý, znovupoužitelný kód, ve kterém se brzy neztratíš
-- dokážeš identifikovat featury a správně je otestovat
-- dokážeš pracovat i bez test IDs - zvládáš práci se selektory (na dev/test env používáme test IDs)
+**CYPRESS_LANGUAGE**=`cs`
 
-## Co má být výsledkem?
+**CYPRESS_RESOLUTION**=`1920x1080`
 
-- Dobře otestovaná sekce kontaktů
+### 4. Spuštění testů
+   ```bash
+   npm run test:e2e
+   ```
 
-  - tvorba, editace, řazení, vyhledávání
-  - vytvoření faktury přes detail kontaktu
-  - kontrola faktur přiřazených u kontaktu
-  - suma a počet faktur v přehledu transakcí
-  - další asserty nechám na tobě...
+## Vysvětlení
+- Změna prostředí a jazyku aplikace lze v CI ovládat pomocí **enviromentálních proměnných**.
+- Testování je **data-driven**, ve složce data se nacházejí jsony s daty pro jednotlivé test suites.
+- Způsob používání selektorů je řešení pro **testování jazykových mutací**, pokud se testy napojí na vývojářské locales (zde jsem vytvořil vlastní locales pro ukázku).
+- Report testování se mimo konzoli vygeneruje ve složce **e2e/report**.
+- Použití selektorů je praktické také na ovládání tabulek test-driven způsobem pomocí **iterací**.
 
-- Strukturované testy, které otestují funkcionalitu na všech doménách
-- Použití fixtures a configu pro práci s doménami
-- V současné době používáme page objekty pro testování aplikace, uvítal bych stejný přístup, případně nějaký lepší ;)
-- Stručné scénáře, co by šlo dále otestovat
-
-## Co bys měl znát a umět?
-- Pracovat s
-  - Gitem
-  - Cypressem
-  - selektory
-  - Java/Type scriptem
-- Mít povědomí o CI, umět řešit flaky testy a používat intercepty
-- Dodržovat DRY princip
-- Psát udržitelný a čistý kód
-
-## Shrnutí
-- Na vypracování úkolu máš maximálně 4 hodiny, více času úkolu prosím nevěnuj, potřebujeme vidět, co zvládneš za daný čas vytvořit.
-- Tento repozitář obsahuje pár commandů z naší aplikace, které by ti měly pomoci s psaním cross-domain testů.
+### Prostor pro zlepšení
+- V úkolu jsem se zaměřil spíše na demostraci ovládání testování skrze env pro praktické ovládání v CI a dodržování DRY principu.
+- Pomocí parametrizace jobů pak můžeme pokrýt další prohlížeče a různá rozlišení.
+- Dále bychom mohli pokračovat v psaní dalších testů pro vytváření, editacim mazání faktur a vydajů či sortování, vyhledávání záznamů či zobrazování sloupů v tabulce.
+- Další možné zlepšení možné přejít na typescript a případně nainstalovat tslint.
+- Můžeme logovat a ukládat do artefaktů další věci jako třeba chyby aplikace, sledovat traffic pomocí interceptů atd.
+- Veškére tyto body můžu ještě rozvést na callu.

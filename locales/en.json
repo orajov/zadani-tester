@@ -1,0 +1,43 @@
+{
+    "auth": {
+        "login": "Log in",
+        "signUpTry": "Try it",
+        "signInExist": "Log in to my account",
+        "signIn": "Log in",
+        "email": "Your e-mail address",
+        "password": "Password"
+    },
+    "menu": {
+        "mobile": "Menu",
+        "login": "Log in",
+        "overview": "Overview",
+        "invoices": "Invoices",
+        "contacts": "Contacts",
+        "reports": "Reports",
+        "expenses": "Expenses",
+        "myAccount": "My account",
+        "close": "Close"
+    },
+    "contacts": {
+        "button": {
+            "save": "Save changes",
+            "back": "Discard",
+            "new": "New contact",
+            "add": "Add contact",
+            "edit": "Edit contact",
+            "delete": "Yes, delete"
+        },
+        "name": "Name",
+        "ico": "Company ID",
+        "dic": "Tax ID",
+        "phone": "Phone",
+        "email": "Email",
+        "website": "Website",
+        "address": {
+            "street": "Street",
+            "city": "City",
+            "zip": "ZIP code",
+            "country": "Country"
+        }
+    }
+}
